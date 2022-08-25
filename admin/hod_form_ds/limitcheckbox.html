@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1">
+   <h1>limit checkbox</h1>
+    c++<input type="checkbox" name="chk" value="c++" onclick="myfun(0)";>
+    java<input type="checkbox" name="chk" value="java" onclick="myfun(1)";>
+    python<input type="checkbox" name="chk" value="python" onclick="myfun(2)";>
+    c<input type="checkbox" name="chk" value="c" onclick="myfun(3)";>
+    c<input type="checkbox" name="chk" value="c" onclick="myfun(4)";>
+    c<input type="checkbox" name="chk" value="c" onclick=" myfun(5)";>
+<!-- 
+    <div>
+        <span id="notvalid" style="color:red"></span>
+      </div> -->
+
+      <script type="text/javascript">
+          function myfun(j)
+          {
+            total = 0;
+            for(i=0;i<document.form1.chk.length;i++)
+            {
+                if(document.form1.chk[i].checked)
+                {
+                    total = total +1;
+                }
+            }
+            if(total>3)
+            {
+                alert("please select three")
+                document.form1.chk[j].checked = false
+            }
+            return false;
+          }
+
+      </script>
+
+ </form>
+</body>
+</html>
