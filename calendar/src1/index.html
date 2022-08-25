@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Calendar</title>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,user-scalable=no"
+    />
+    <link rel="icon" type="image/x-icon" href="../src1/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="calendar_css.css" />
+    <link rel="stylesheet" href="evo-calendar.midnight-blue.min.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div id="calendar"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="evo-calendar.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#calendar").evoCalendar({
+          theme: "Midnight Blue",
+
+          calendarEvents: [
+            {
+              id: "event1", // Event's ID (required)
+              name: "National Voter's Day", // Event name (required)
+              date: "January/25/2020", // Event date (required)
+              description:
+                "In order to encourage more young voters to take part in the political process, Government of India has decided to celebrate January 25 every year as National Voters' Day. It has been started from 25 January 2011 to mark Commission's foundation day.<img src='../eventimg/voters_day.jpg' alt=image >",
+              type: "holiday", // Event type (required)
+              everyYear: true, // Same event every year (optional)
+            },
+            {
+              id: "event2", // Event's ID (required)
+              name: "Republic day", // Event name (required)
+              date: "January/26/2020", // Event date (required)
+              description:
+                "Republic Day is a national holiday in India, when the country marks and celebrates the date on which the Constitution of India came into effect on 26 January 1950.<img src='../eventimg/republic_day.jpg' alt=image >",
+              type: "holiday", // Event type (required)
+              everyYear: true, // Same event every year (optional)
+            },
+            {
+              id: "event3", // Event's ID (required)
+              name: "Mother Language Day", // Event name (required)
+              date: "February/21/2020", // Event date (required)
+              description:
+                " International Mother Language Day promotes the existence of multilingualism in societies and aims to preserve traditional knowledge and cultures through sustainable methods.<img src='../eventimg/mother_language.jpg' alt=image >",
+              type: "holiday", // Event type (required)
+              everyYear: true, // Same event every year (optional)
+            },
+            {
+              id: "event4", // Event's ID (required)
+              name: "Marathi Language day", // Event name (required)
+              date: "February/27/2020", // Event date (required)
+              description:
+                "Marathi Language Day marks the birth anniversary of renowned Marathi poet Vishnu Vaman Shirwadkar, who was popularly known as ' Kusumagraj '.<img src='../eventimg/marathi_day.jpg' alt=image >",
+              type: "holiday", // Event type (required)
+              everyYear: true, // Same event every year (optional)
+            },
+            {
+              id: "event5", // Event's ID (required)
+              name: "National Science Day", // Event name (required)
+              date: "February/28/2020", // Event date (required)
+              description:
+                "February 28 is celebrated as National Science Day to mark the invention of the Raman Effect.<img src='../eventimg/science_day.jpg' alt=image >",
+              type: "holiday", // Event type (required)
+              everyYear: true, // Same event every year (optional)
+            },
+            {
+              id: "event6", // Event's ID (required)
+              name: "Women's Day", // Event name (required)
+              date: "March/8/2020", // Event date (required)
+              description:
+                "International Women's Day is a big event and is celebrated to commemorate the cultural, political, and socioeconomic achievements of women.<img src='../eventimg/women_day.jpg' alt=image > ",
+              type: "holiday", // Event type (required)
+              everyYear: true, // Same event every year (optional)
+            },
+            {
+              id: "event7", // Event's ID (required)
+              name: "World Book Day", // Event name (required)
+              date: "April/23/2020", // Event date (required)
+              description:
+                "23 April is celebrated as World Book Day aims to promote reading, writing novels and stories, translating , publishing and copyright.<img src='../eventimg/book_day.jpg' alt=image >",
+              type: "holiday", // Event type (required)
+              everyYear: true, // Same event every year (optional)
+            },
+            {
+              id: "event8", // Event's ID (required)
+              name: "English Language Day", // Event name (required)
+              date: "April/23/2020", // Event date (required)
+              description:
+                "English Language Day is celebrated on 23 April as it marks the occasion of William Shakespeare's birth anniversary as well as his death anniversary.<img src='../eventimg/english_day.jpg' alt=image >",
+              type: "holiday", // Event type (required)
+              everyYear: true, // Same event every year (optional)
+            },
+            {
+              id: "event9", // Event's ID (required)
+              name: "Maharashtra Day", // Event name (required)
+              date: "May/1/2020", // Event date (required)
+              description:
+                "May 1 is marked as Maharashtra Day to celebrate the existence of the state.<img src='../eventimg/maharashtra_day1.jpg' alt=image >",
+              type: "holiday", // Event type (required)
+              everyYear: true, // Same event every year (optional)
+            },
+            {
+              id: "event10", // Event's ID (required)
+              name: "Workers Day", // Event name (required)
+              date: "May/1/2020", // Event date (required)
+              description:
+                "International Workers' Day commemorating the historic struggles and gains made by workers and the labour movement.<img src='../eventimg/workers_day.jpg' alt=image > ",
+              type: "holiday", // Event type (required)
+              everyYear: true, // Same event every year (optional)
+            },
+            {
+              id: "event11", // Event's ID (required)
+              name: "World Athletics Day", // Event name (required)
+              date: "May/7/2020", // Event date (required)
+              description:
+                "World Athletics day is celebrated globally every year to spread awareness among children and youth regarding the importance of fitness and be healthy.<img src='../eventimg/athletic_day.jpg' alt=image >",
+              type: "holiday", // Event type (required)
+              everyYear: true, // Same event every year (optional)
+            },
+            {
+              id: "event12", // Event's ID (required)
+              name: "Technology Day", // Event name (required)
+              date: "May/11/2020", // Event date (required)
+              description:
+                "National Technology Day is celebrated on May 11 every year to commemorate the achievements of scientists, researchers, engineers and all others involved in the field of science and technology.<img src='../eventimg/technology_day.jpg' alt=image >",
+              type: "holiday", // Event type (required)
+              everyYear: true, // Same event every year (optional)
+            },
+            {
+              id: "event13", // Event's ID (required)
+              name: "Yoga Day", // Event name (required)
+              date: "June/21/2020", // Event date (required)
+              description:
+                "The International Day of Yoga aims to raise awareness worldwide of the many benefits of practicing yoga.<img src='../eventimg/yoga_day.jpg' alt=image >",
+              type: "holiday", // Event type (required)
+              everyYear: true, // Same event every year (optional)
+            },
+            {
+              id: "event14", // Event's ID (required)
+              name: "Youth Day", // Event name (required)
+              date: "August/12/2020", // Event date (required)
+              description:
+                "August 12 of every year is celebrated as the International Youth Day to raise awareness about the cultural and legal issues surrounding the youth.<img src='../eventimg/youth_day.jpg' alt=image >",
+              type: "holiday", // Event type (required)
+              everyYear: true, // Same event every year (optional)
+            },
+            {
+              id: "event15", // Event's ID (required)
+              name: "Independence Day", // Event name (required)
+              date: "August/15/2020", // Event date (required)
+              description:
+                "India gained independence from British rule on August 15, 1947. As India freed herself from the clutches of the British empire,<img src='../eventimg/independence_day.jpg' alt=image >",
+              type: "holiday", // Event type (required)
+              everyYear: true, // Same event every year (optional)
+            },
+            {
+              id: "event16", // Event's ID (required)
+              name: "Photography Day", // Event name (required)
+              date: "August/19/2020", // Event date (required)
+              description:
+                "World Photography Day is an annual celebration of art, science, and history of photography. It is observed every year on August 19th to pay tribute to the art of photography.<img src='../eventimg/photography_day.jpg' alt=image >",
+              type: "holiday", // Event type (required)
+              everyYear: true, // Same event every year (optional)
+            },
+            {
+              id: "event17", // Event's ID (required)
+              name: "Teachers Day", // Event name (required)
+              date: "September/5/2020", // Event date (required)
+              description:
+                "The teachers' day is celebrated to mark the birth anniversary of its second President Dr Sarvepalli Radhakrishnan.<img src='../eventimg/teachers_day.jpg' alt=image >",
+              type: "holiday", // Event type (required)
+              everyYear: true, // Same event every year (optional)
+            },
+            {
+              id: "event18", // Event's ID (required)
+              name: "Programmers Day", // Event name (required)
+              date: "September/13/2020", // Event date (required)
+              description:
+                "International Programmers' Day celebrates the positive changes that programmers make to improve our everyday lives.<img src='../eventimg/programmer_day.jpg' alt=image >",
+              type: "holiday", // Event type (required)
+              everyYear: true, // Same event every year (optional)
+            },
+            {
+              id: "event19", // Event's ID (required)
+              name: "Hindi Day", // Event name (required)
+              date: "September/14/2020", // Event date (required)
+              description:
+                "The National Hindi Diwas, which is celebrated on September 14 every year, commemorates the adoption of Hindi as one of the official languages by the Constituent Assembly of India in 1949.<img src='../eventimg/hindi_day.jpg' alt=image >",
+              type: "holiday", // Event type (required)
+              everyYear: true, // Same event every year (optional)
+            },
+            {
+              id: "event20", // Event's ID (required)
+              name: "Engineer's Day", // Event name (required)
+              date: "September/15/2020", // Event date (required)
+              description:
+                "The birth anniversary of Sir M Visvesvaraya is celebrated as Engineer's Day since 1968 as a tribute to a the great engineer who helped in building some of the architectural marvels including Krishna Raja Sagar dam in Karnataka.<img src='../eventimg/engineer_day.jpg' alt=image >",
+              type: "holiday", // Event type (required)
+              everyYear: true, // Same event every year (optional)
+            },
+            {
+              id: "event21", // Event's ID (required)
+              name: "Gandhi Jayanti", // Event name (required)
+              date: "October/2/2020", // Event date (required)
+              description:
+                "Gandhi Jayanti is celebrated on 2nd October every year to mark the birth anniversary of Mohandas Karamchand Gandhi, who was famously known as Mahatma Gandhi.<img src='../eventimg/gandhi_jayanti.jpg' alt=image >",
+              type: "holiday", // Event type (required)
+              everyYear: true, // Same event every year (optional)
+            },
+            {
+              id: "event22", // Event's ID (required)
+              name: "Vachan Prerana Din", // Event name (required)
+              date: "October/15/2020", // Event date (required)
+              description:
+                "This day is observed every year on 15th October as it is the birth anniversary of our late Dr. A.P.J. Abdul Kalam.<img src='..//eventimg//vachan_din.jpg' alt=image >",
+              type: "holiday", // Event type (required)
+              everyYear: true, // Same event every year (optional)
+            },
+            {
+              id: "event23", // Event's ID (required)
+              name: "Mathematics Day", // Event name (required)
+              date: "December/22/2020", // Event date (required)
+              description:
+                "National Mathematics Day is celebrated on 22 December every year to mark the birth anniversary of legendary Indian mathematician, Srinivasa Ramanujan.<img src='..//eventimg//math_day.jpg' alt=image >",
+              type: "holiday", // Event type (required)
+              everyYear: true, // Same event every year (optional)
+            },
+          ],
+        });
+      });
+    </script>
+  </body>
+</html>
