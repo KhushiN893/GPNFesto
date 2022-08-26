@@ -14,19 +14,22 @@ Overall flow of GPNFesto -
 
 ## Demo Videos :
 1. GPNFesto :
+
 https://user-images.githubusercontent.com/92162945/186872043-55080cd5-96d5-474c-9679-d7b0d0193ab6.mp4
 
 2. Activities of Admin :
+
 https://user-images.githubusercontent.com/92162945/186872685-a98d1ad4-6827-41f2-be73-b3cf254dff8f.mp4
 
 3. Activities of HOD :
+
 https://user-images.githubusercontent.com/92162945/186873534-7acfa63c-3151-4495-a8cf-d678633b96b7.mp4
 
 4. Activities of CR :
+
 https://user-images.githubusercontent.com/92162945/186874013-ced4787d-5b46-4a64-8514-5893900fb222.mp4
 
 
 5. Activities of Faculties :
+
 https://user-images.githubusercontent.com/92162945/186874296-4fc889a8-5594-4aea-b5b4-a76fac4b1bf7.mp4
-
-
